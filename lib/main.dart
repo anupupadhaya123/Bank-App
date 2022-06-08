@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => MaterialApp(
         title: 'Nepali Wallet',
         debugShowCheckedModeBanner: false,
+
+        // Adjusting various widget as per the scale factor of the display
         builder: (context, widget) {
           return MediaQuery(
               data: MediaQuery.of(context).copyWith(textScaleFactor : 1.0),
